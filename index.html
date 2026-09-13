@@ -1,1 +1,306 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tell Campaign Donkey your business challenge. Explore digital marketing, software, automation and branding to grow profit, save time and reduce costs.">
+  <meta name="theme-color" content="#14251e">
+  <title>Campaign Donkey | Move your business forward</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #14251e;
+      background: #f5f7f4;
+    }
+    body { margin: 0; }
+    a { color: inherit; }
+    header, main, footer {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 28px 0;
+      border-bottom: 1px solid #d9dfd8;
+    }
+    .brand {
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: -0.8px;
+    }
+    .brand span { color: #54752a; }
+    header a {
+      font-size: 14px;
+      text-underline-offset: 4px;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+      padding: 64px 0;
+    }
+    .eyebrow {
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin: 0 0 22px;
+    }
+    h1 {
+      font-size: clamp(42px, 5.4vw, 68px);
+      line-height: 1.06;
+      letter-spacing: -2.5px;
+      margin: 0 0 26px;
+    }
+    h1 span { color: #54752a; }
+    .intro {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #526056;
+      max-width: 470px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+    .services span {
+      font-size: 14px;
+      border: 1px solid #ccd5c8;
+      padding: 9px 12px;
+      border-radius: 30px;
+    }
+    .example {
+      margin-top: 34px;
+      padding-left: 18px;
+      border-left: 3px solid #a1bc75;
+      color: #526056;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .example strong { color: #14251e; }
+    form {
+      background: white;
+      border: 1px solid #dde3da;
+      border-radius: 22px;
+      padding: 32px;
+      box-shadow: 0 16px 45px #14251e08;
+    }
+    h2 {
+      font-size: 25px;
+      letter-spacing: -0.7px;
+      margin: 0 0 10px;
+    }
+    .form-intro {
+      color: #526056;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0 0 26px;
+    }
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 20px 0 9px;
+    }
+    input, select, textarea, button {
+      font: inherit;
+      width: 100%;
+    }
+    input, select, textarea {
+      padding: 13px;
+      border: 1px solid #cbd4c7;
+      border-radius: 9px;
+      background: #fff;
+      color: #14251e;
+      font-size: 16px;
+    }
+    textarea {
+      min-height: 125px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+    :focus-visible {
+      outline: 3px solid #789b44;
+      outline-offset: 3px;
+    }
+    button {
+      margin-top: 25px;
+      padding: 16px;
+      border: 0;
+      border-radius: 9px;
+      color: white;
+      background: #14251e;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover { background: #2d4939; }
+    .note {
+      color: #526056;
+      font-size: 13px;
+      line-height: 1.6;
+      margin: 13px 0 0;
+    }
+    #error {
+      color: #a02626;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    footer {
+      border-top: 1px solid #d9dfd8;
+      padding: 24px 0;
+      font-size: 14px;
+      color: #526056;
+      line-height: 1.6;
+    }
+    footer a { text-underline-offset: 3px; }
+    @media (max-width: 800px) {
+      main {
+        grid-template-columns: 1fr;
+        gap: 34px;
+        padding: 38px 0;
+      }
+      h1 { max-width: 550px; }
+      form { padding: 24px; }
+    }
+    @media (max-width: 420px) {
+      header { align-items: flex-start; flex-direction: column; gap: 10px; }
+      h1 { font-size: 43px; }
+      form { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">campaign<span>donkey.</span></div>
+    <a href="https://www.saravanansvanas.com"
+       target="_blank" rel="noopener noreferrer">
+      Meet Saravanan
+    </a>
+  </header>
+
+  <main>
+    <section aria-labelledby="headline">
+      <p class="eyebrow">LESS FRICTION. MORE PROGRESS.</p>
+      <h1 id="headline">
+        Grow your profit.<br>
+        Save time.<br>
+        <span>Reduce costs.</span>
+      </h1>
+      <p class="intro">
+        What’s holding your business back?
+        Tell us your challenge, and we’ll explore a practical
+        way forward. You don’t need to know which service to ask for.
+      </p>
+
+      <div class="services" aria-label="Our areas of support">
+        <span>Digital marketing</span>
+        <span>Custom software</span>
+        <span>Process automation</span>
+        <span>Branding</span>
+      </div>
+
+      <p class="example">
+        <strong>Not sure where to start?</strong><br>
+        “We get enquiries but struggle to follow up.”<br>
+        “My team spends hours on repetitive work.”<br>
+        “Our branding doesn’t reflect our quality.”
+      </p>
+    </section>
+
+    <form id="enquiry-form">
+      <h2>Let’s talk about your business.</h2>
+      <p class="form-intro">
+        Share a few details to start a conversation.
+      </p>
+
+      <label for="goal">What would you like to improve?</label>
+      <select id="goal" required>
+        <option value="">Choose your main goal</option>
+        <option>Get more customers and sales</option>
+        <option>Save time and reduce manual work</option>
+        <option>Reduce business costs</option>
+        <option>Build a stronger brand</option>
+        <option>Solve another business challenge</option>
+      </select>
+
+      <label for="challenge">Tell us about your challenge</label>
+      <textarea id="challenge" required maxlength="1500"
+        placeholder="What’s happening now, and what would you like to change?"></textarea>
+
+      <label for="name">Your name</label>
+      <input id="name" type="text" autocomplete="name"
+        required maxlength="100" placeholder="Your full name">
+
+      <label for="business">Business name</label>
+      <input id="business" type="text" autocomplete="organization"
+        required maxlength="150" placeholder="Your business or brand">
+
+      <p id="error" role="alert" hidden></p>
+
+      <button type="submit">Continue to WhatsApp →</button>
+      <p class="note">
+        WhatsApp will open with your enquiry ready.
+        Tap Send there to share it with Saravanan.
+        This form does not save your details on the website.
+      </p>
+      <noscript>
+        <p>Please enable JavaScript to prepare your enquiry, or
+          <a href="https://wa.me/917034714831">contact us on WhatsApp</a>.
+        </p>
+      </noscript>
+    </form>
+  </main>
+
+  <footer>
+    Campaign Donkey · Business challenges, practical solutions.<br>
+    By <a href="https://www.saravanansvanas.com"
+      target="_blank" rel="noopener noreferrer">Saravanan M</a>
+  </footer>
+
+  <script>
+    const form = document.getElementById("enquiry-form");
+    const error = document.getElementById("error");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const goal = document.getElementById("goal").value;
+      const challenge = document.getElementById("challenge").value.trim();
+      const name = document.getElementById("name").value.trim();
+      const business = document.getElementById("business").value.trim();
+
+      if (!goal || !challenge || !name || !business) {
+        error.textContent = "Please complete each field before continuing.";
+        error.hidden = false;
+        return;
+      }
+
+      error.hidden = true;
+
+      const message = [
+        "Hi Saravanan! I have a business enquiry from Campaign Donkey.",
+        "",
+        "Name: " + name,
+        "Business: " + business,
+        "My goal: " + goal,
+        "",
+        "My business challenge:",
+        challenge
+      ].join("\n");
+
+      window.location.href =
+        "https://wa.me/917034714831?text=" +
+        encodeURIComponent(message);
+    });
+  </script>
+</body>
+</html>
